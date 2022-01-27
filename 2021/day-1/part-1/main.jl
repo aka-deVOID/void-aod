@@ -1,4 +1,4 @@
-@time function main()::Int
+function main()::Int
     filedata = open("inputs.txt", "r");
     data = readlines(filedata);
     count = 0;
