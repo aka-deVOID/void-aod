@@ -7,8 +7,7 @@ fn main() {
         .split('\n')
         .map(|x| x.to_string())
         .collect::<Vec<String>>();
-    
-    
+
     let mut a;
     let mut point: u32 = 0;
 
@@ -18,7 +17,7 @@ fn main() {
             .collect::<String>()
             .chars()
             .collect::<Vec<char>>();
-        
+
         if a[1] == 'X' {
             point += 1;
             if a[0] == 'A' {
@@ -31,7 +30,7 @@ fn main() {
             if a[0] == 'A' {
                 point += 6;
             } else if a[0] == 'B' {
-                point +=3
+                point += 3
             };
         } else if a[1] == 'Z' {
             point += 3;
@@ -41,7 +40,6 @@ fn main() {
                 point += 3;
             };
         };
-    };
-    println!("{}", point)
+    }
+    println!("{}", point);
 }
-
