@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
-    // A: ROCK, B: PAPER, C: Scissors // X: ROCK +1 , Y: PAPER +2, Z: Scissors +3 // Lose: 0 , mosavi: 3 , Win: 6
+    // A: ROCK, B: PAPER, C: Scissors // X: ROCK +1 , Y: PAPER +2, Z: Scissors +3 // Lose: 0 , Draw: 3 , Win: 6
     let file_data = read_to_string("input.txt")
         .expect("Critical Error!!")
         .split('\n')
